@@ -1,0 +1,462 @@
+/* externe CSS Datei, die in allen HTML Dateien im Headbereich eingebebettet wird, damit der hier festgelegte Stil übernommen wird*/
+   
+/* TAGS */
+
+* {
+    max-width: 100%;}
+
+    a {
+        font-family: 'Outfit',arial,sans-serif;
+        text-decoration: none;}
+
+    a:hover {
+        font-weight: bolder;}
+
+    a:link {
+        color: black;
+        font-family: 'Outfit',arial,sans-serif;}
+
+    a:visited {
+        color: black;}
+
+
+    body {
+        background-color: #EEEBDD; /*Hintergrundfarbe*/
+        font-family: 'Outfit',arial,sans-serif;
+        margin: 0;
+        }
+
+    checkbox {
+        height: 20px;
+        width: 20px;
+        margin: 0;}
+
+    div {
+        background-color: transparent;
+        width: 100%;
+        margin: 50px auto 50px auto;}
+
+    
+
+    footer {
+        background-color: white;
+        margin: 0;
+        margin-top: 20px;
+        padding-top: 5px;
+        box-shadow:  0px 0px 10px 5px rgba(0, 0, 0, 0.5);}
+
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;}
+
+
+
+    hr {
+        border-style: none; /*Darstellung der horizontalen Linien*/
+        border-top-style: dotted; /*Nur Bezug auf die oberste Linie; hier gepunktet*/
+        border-color: #D8B6A4; 
+        border-width: 10px; /*Wie groß sind die Punkte?*/
+        width: 50%; /*Breite der horizontalen Linie; entweder in Px oder in %, dann automatisch angepasst an Bildschirmbreite für mobil, Desktop*/
+        margin: 50px auto 50px auto}
+
+    h1 {
+        color: #630000; /*H1 Überschriftsfarbe*/
+        font-family: 'Outfit', sans-serif;
+        line-height: 1;
+        margin-bottom: 0;}       
+    
+    h3 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 2rem;
+        color: #630000;
+        margin-bottom: 0;}
+
+    h2 {
+        font-size: 2rem;
+        font-family: 'Outfit', sans-serif;
+        font-weight: normal;
+        margin: auto auto 10px auto;
+        display: inline-block;
+        padding: auto auto 10px auto;
+        color: #630000;
+        font-weight: bolder;}
+
+
+
+    p {
+        display: inline-block;
+        font-size: 1.3rem;
+        line-height: 1,15;
+        color: #2b2b2b;
+        margin-left: 10px;
+        margin-right: 10px;}
+
+    ol {
+        font-size: 1.3rem;
+        line-height: 1,15;
+        color: #2b2b2b;}
+    
+    ul {
+        font-size: 1.3rem;
+        line-height: 1,15;
+        color: #2b2b2b;}
+
+
+  
+
+       
+
+/* CLASS SELECTOR = ein Punkt davor, z.B. .warnung; mehrere, sich wiederholende Elemente können dieselbe Class haben*/ 
+
+.buchtitel {
+    margin: 10px;
+    height: auto;
+    width: auto;}
+
+
+.buecher a {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1,15;
+    color: #2b2b2b;
+    text-decoration: none;}
+
+.eingabefeld {
+    width: 300px;
+    margin-top: 10px;
+    }
+
+
+
+.header {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 10%;
+    position: fixed;
+    margin: 0 auto 10% auto;
+    z-index: 12;
+    box-shadow:  0px 0px 10px 5px rgba(0, 0, 0, 0.5);}
+
+.header h2 {
+    font-weight: normal;}
+
+
+.header-text {
+    display: flex;
+    display: inline;   
+    margin: 10px auto 10px 10px;}
+
+.header img {
+    height: 70px;
+    width: 70px;
+    margin: 10x auto 10px 0;
+    float: left;}
+ 
+
+.footer-bottom {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;}
+
+
+.footer-inhalt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;}
+
+.footer-inhalt h3 { 
+        font-size: 1,8rem;
+        font-weight: normal;
+        margin: 0;}
+
+.footer-inhalt p ul {
+        max-width: 100%;
+        line-height: 20px;
+        font-size: 1.2rem;}
+
+
+.social-media li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem 0 0 0;
+        padding: 0;}
+
+
+
+.social-media a {
+    text-decoration: none;
+    color: #630000;
+    transition: color 0.4s ease;}
+
+.social-media a:hover {
+    background-color: #D8B6A4;
+    border-radius: 0px;}
+
+
+.header-h1 {
+    display: inline-block;
+    color: #630000;
+    margin: 20px auto auto 10px;
+    font-size: 3vw;
+    font-weight: bolder;
+    line-height: 3rem;}
+
+.header h2 {
+    color: black;
+    font-size: 2vw;}
+
+
+.kontakt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 15px auto;
+    flex-direction: column;}
+
+.kontakt p{
+    font-size: 1.5rem;}
+
+.kontakt-button {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.kontaktformular {
+    margin-left: 10px;}
+
+.kontaktformular a {
+    margin-left: 0;}
+
+.kontaktformular table {
+    font-size: 1.2rem;}
+
+.kontaktformular label {
+    font-size: 1.2rem;}
+
+
+.n-wort-tabelle td {
+    font-size: 1.5em;}
+
+.n-wort-tabelle th {
+    font-size: 1.5em;}
+
+
+
+
+.button {
+        width: auto;
+        -webkit-border-radius: 27px;
+        -moz-border-radius: 27px;
+        border-radius: 27px;
+        color: #2B2B2B;
+        font-family: 'Outfit',arial,sans-serif;
+        font-size: 39px;
+        font-weight: lighter;
+        padding: 10px;
+        background-color: #D8B6A4;
+        border: solid #000000 1px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.4s ease;}
+
+        
+.button a {
+    text-decoration: none;}
+
+.button:hover {
+        border: dotted #630000 0;
+        -webkit-border-radius: 27px;
+        -moz-border-radius: 27px;
+        border-radius: 27px;
+        font-weight: normal;}
+
+.themen {
+    background-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;}
+
+.kurzinfo {
+    margin-top: 0px;
+    margin-bottom: 0;
+    line-height: 1.4em;}
+
+.podcast-fotos li {
+    list-style: none;}
+
+.podcast-fotos {
+    list-style: none;
+    display: flex;
+    margin: 1rem 0 0 0;
+    align-items: center;
+    justify-content: center;}
+
+.podcast-fotos img {
+        margin: 20px 40px 20px 40px;
+        height: 300px;
+        width: 300px;}
+
+.seitenanfang h1 h2 h3 h4 h5 h6 {
+    font-weight: bolder;}
+
+.seitenanfang {
+    margin-left: 10px;
+    margin-top: 5%;}
+
+.senden-button {
+        width: auto;
+        -webkit-border-radius: 27px;
+        -moz-border-radius: 27px;
+        border-radius: 27px;
+        color: black;
+        font-family: 'Outfit',arial,sans-serif;
+        font-size: 1.2rem;
+        font-weight: lighter;
+        padding: 10px;
+        background-color: #D8B6A4;
+        border: solid #000000 1px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.4s ease;
+        margin-top: 10px;}
+
+        
+.senden-button a {
+    text-decoration: none;}
+
+.senden-button:hover {
+        border: dotted #630000 0;
+        -webkit-border-radius: 27px;
+        -moz-border-radius: 27px;
+        border-radius: 27px;
+        font-weight: normal;}
+
+.startseite {
+         margin: 10px;
+        text-align: center;}
+
+.suchleiste {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 110px auto 10px auto;
+    border-radius: 50%;}
+
+.suchtext {
+    font-size: 1.2rem;
+    font-family: 'Outfit',arial,sans-serif;
+    transition: color 0.4s ease;}
+
+.themen-buttons {
+    display: flex;
+    margin: 1rem 0 0 0;
+    align-items: center;
+    justify-content: center;}
+
+.themenuebersicht a {
+        margin: 0 50px;}
+
+.themenuebersicht h2 {
+        font-weight: bolder;}
+
+
+.zitat p {
+    color: black;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;}
+
+.zurueck {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border: black;
+    text-decoration: none;}
+
+.zurueck:hover {
+    font-weight: bolder;}
+
+.zurueck_startseite {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border: black;
+    text-decoration: none;}
+
+.zurueck_startseite:hover {
+    font-weight: bolder;}
+
+    
+
+/* IDs SELECTOR = eine Doppelraute davor, z.B. #banane;eindeutige Bestimmung; eine ID kann nur an ein bestimmtes Element pro HTML-Seite vergeben werden */
+
+#gut-zu-wissen {
+    color: black;}
+
+#feminismus_start {
+    margin: 20px 0 20px 0;}
+
+#rassismus_start {
+    margin: 20px auto 20px 0;}
+
+
+#kontakt-button {
+        width: auto;
+        -webkit-border-radius: 27px;
+        -moz-border-radius: 27px;
+        border-radius: 27px;
+        color: #2B2B2B;
+        font-family: 'Outfit',arial,sans-serif;
+        font-size: 39px;
+        font-weight: 100;
+        padding: 10px;
+        background-color: #D8B6A4;
+        border: solid #000000 1px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.4s ease;
+        margin: 30px 0;}
+
+        
+#kontakt-button a {
+    text-decoration: none;}
+
+#kontakt-button:hover {
+        border: dotted #630000 0;
+        -webkit-border-radius: 27px;
+        -moz-border-radius: 27px;
+        border-radius: 27px;}
+
+
+
+#unterseite-headline {
+    margin-top: 7%;
+    margin-left: 10px;}
+
+    
